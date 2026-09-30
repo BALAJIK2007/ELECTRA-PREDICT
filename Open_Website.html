@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="1;url=http://localhost:5173">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opening ElectraPredict AI...</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #090d16 0%, #0d1527 50%, #081020 100%);
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 16px;
+      padding: 36px 32px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(6, 182, 212, 0.15);
+      backdrop-filter: blur(12px);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(6, 182, 212, 0.15);
+      border: 1px solid rgba(6, 182, 212, 0.4);
+      color: #38bdf8;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 20px;
+      border: 3px solid rgba(56, 189, 248, 0.2);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #0ea5e9, #0284c7);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 10px;
+      font-size: 15px;
+      box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      transform: translateY(-1px);
+    }
+    .tip {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #64748b;
+    }
+    .tip code {
+      background: #1e293b;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">ElectraPredict AI</div>
+    <div class="spinner"></div>
+    <h1>Opening Web Application...</h1>
+    <p>You are being redirected to your local development server at <strong>localhost:5173</strong>.</p>
+    <a href="http://localhost:5173" class="btn">Click Here If Not Redirected</a>
+    <div class="tip">
+      If the page doesn't load, make sure the servers are running or double-click <code>Launch_App.bat</code>.
+    </div>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = "http://localhost:5173";
+    }, 800);
+  </script>
+</body>
+</html>
